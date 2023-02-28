@@ -62,7 +62,7 @@ prediction = model.predict(processed_image)
 class_index = np.argmax(prediction)
 
 # Определение наименования объекта
-class_names = ['Лес', 'Тайга', 'Пустыня', 'Тундра', 'Болото', 'Горы', 'Зимние Скалы']
+class_names = ['1', '2', '3', '4', '5', '6', '7']
 if class_index >= len(class_names):
     object_name = "Неизвестный класс"
 else:
